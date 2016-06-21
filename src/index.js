@@ -1,9 +1,16 @@
-//create new component should produce HTML
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const App = function()
+//create new component should produce HTML
+const App = () =>
 {
-	return <div>hello</div>;
+	return (
+		<div>hello</div>
+	);
 }
 
 //put html genereted into de DOM
-React.render(App);
+ReactDOM.render(
+	<App />,
+	document.querySelector('.container')
+);
